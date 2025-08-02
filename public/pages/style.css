@@ -1,13 +1,20 @@
+:root {
+  --left-color: #ef233c;
+  --right-color: #f0f2d5;
+}
+
 * {
   font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
-  background-color: red;
+  background: linear-gradient(to top right, var(--left-color), var(--right-color));
   display: flex;
+  background-repeat: no-repeat;
   justify-content: center;
   align-items: center;
-  height: 90vh;
+  height: 100vh;
+  overflow: hidden;
 }
 
 form {
@@ -51,12 +58,13 @@ input {
 }
 
 button {
-  padding: 8px 20px 8px 20px;
+  padding: 12px 20px 12px 20px;
   border: none;
   border-radius: 25px;
   color: white;
+  font-size: 16px;
   width: fit-content;
-  background-color: red;
+  background-color: var(--left-color);
   cursor: pointer;
   margin-top: 16px;
   font-weight: bolder;
