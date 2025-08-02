@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="pages/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Get in Touch</title>
+  </head>
+  <body>
+    <form action="" method="post">
+      <h1>Get in Touch</h1>
+      <p>Leave your message and we'll get back to you shortly</p>
+      <section>
+        <div>
+          <label for="name">Your name</label>
+          <input
+            required="true"
+            name="name"
+            id="name"
+            type="text"
+            placeholder="John Doe"
+          />
+        </div>
+        <div>
+          <label for="email">Email address</label>
+          <input
+            required="true"
+            name="email"
+            id="email"
+            type="email"
+            placeholder="example@domain.com"
+          />
+        </div>
+        <div>
+          <label for="phone">Phone</label>
+          <input
+            name="phone"
+            id="phone"
+            type="tel"
+            placeholder="+237 6 70 00 00 00"
+          />
+        </div>
+        <div>
+          <label for="website">Website URL</label>
+          <input
+            name="website"
+            id="website"
+            type="url"
+            placeholder="https://example.com"
+          />
+        </div>
+      </section>
+      <label for="message">Message</label>
+      <textarea
+        required="true"
+        name="message"
+        id="message"
+        rows="4"
+        placeholder="Tel us briefly about your needs"
+      ></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
